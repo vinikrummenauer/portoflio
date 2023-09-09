@@ -83,7 +83,7 @@ export default function Project({
           group-even:right-[initial] group-even:-left-40"
           onClick={() => {
             setIsModalOpen(true);
-            setModalImage(imageUrl);
+            setModalImage(imageUrl.src);
           }}
         />
       </section>
@@ -101,6 +101,8 @@ export default function Project({
               <Image
                 src={modalImage}
                 alt="Imagem em tela cheia"
+                width={300}
+                height={300}
                 quality={95}
                 className="max-h-screen mx-auto"
               />
