@@ -52,7 +52,7 @@ export default function Intro() {
   <div className="relative z-10">
     Hello, I am a <span className="font-bold">full stack developer</span> with a deep passion for technology. 
     My stack includes <span className="font-bold">React and Node.js</span>, and I am constantly {" "}
-    <span className="font-bold">fascinated by the ever-evolving world of tech </span>.
+    <span className="font-bold">fascinated by the ever-evolving world of tech.</span>
   </div>
   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent animate-gradient"></div>
 </motion.div>
