@@ -46,9 +46,9 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Taquara, RS",
     description:
-      "I worked as a full-stack developer for 1 year, I acquired a lot of experience",
+      "I worked as a full-stack developer, I acquired a lot of experience",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "Jan 2023 - Sep 2023",
   },
   {
     title: "Full-Stack Developer",
@@ -56,7 +56,7 @@ export const experiencesData = [
     description:
       "I currently work as a full-stack developer in a startup focused on tourism. I am also looking for job opportunities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: "Aug 2023 - present",
   },
 ] as const;
 
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "CONSEPRO - ER",
     description:
-      "I worked for 1 year as a full stack developer developing a rotating parking system for the city.",
+      "I worked as a full stack developer developing a rotating parking system for the city.",
     tags: ["React", "Node.js", "MySQL"],
     imageUrl: consepro,
   },
