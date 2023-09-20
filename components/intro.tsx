@@ -9,7 +9,6 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import me from "@/public/me.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -21,28 +20,6 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] text-white"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src={me}
-              alt="me"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-60 w-60 rounded-full object-cover shadow-2xl"
-            />
-          </motion.div>
-        </div>
-      </div>
 
       <motion.div
   className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl relative"

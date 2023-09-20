@@ -4,6 +4,8 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Image from "next/image";
+import me from "@/public/me.png";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -25,6 +27,28 @@ export default function About() {
       <span className="font-medium">I work with React, Node.js and MySQL. </span> I'm looking for a job as a full 
       stack developer.
       </p>
+      <div className="flex items-center justify-center mt-12">
+        <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
+          >
+            <Image
+              src={me}
+              alt="me"
+              width="192"
+              height="192"
+              quality="95"
+              priority={true}
+              className="h-60 w-60 rounded-full object-cover shadow-2xl"
+            />
+          </motion.div>
+        </div>
+      </div>
     </motion.section>
   );
 }
